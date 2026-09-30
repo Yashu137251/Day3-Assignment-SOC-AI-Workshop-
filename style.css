@@ -1,0 +1,1133 @@
+/* ============================================================
+   GLOBAL APPLICATION
+============================================================ */
+
+.stApp {
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(99, 102, 241, 0.20),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(168, 85, 247, 0.18),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(14, 165, 233, 0.14),
+            transparent 35%
+        ),
+
+        #0b1020;
+
+    color: #f8fafc;
+}
+
+
+/* ============================================================
+   MAIN CONTAINER
+============================================================ */
+
+.block-container {
+
+    max-width: 1450px;
+
+    padding-top: 2rem;
+
+    padding-bottom: 4rem;
+}
+
+
+/* ============================================================
+   MAIN TITLE
+============================================================ */
+
+.main-title {
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #a5b4fc,
+            #c084fc
+        );
+
+    background-clip: text;
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+.subtitle {
+
+    color: #94a3b8;
+
+    font-size: 16px;
+
+    margin-bottom: 25px;
+}
+
+
+/* ============================================================
+   SIDEBAR
+============================================================ */
+
+section[data-testid="stSidebar"] {
+
+    background:
+        linear-gradient(
+            180deg,
+            #101827,
+            #172235
+        );
+
+    border-right:
+        1px solid
+        rgba(255,255,255,0.08);
+}
+
+
+/* ============================================================
+   SIDEBAR BRAND
+============================================================ */
+
+.sidebar-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 23px;
+
+    font-weight: 800;
+
+    color: #ffffff;
+
+    letter-spacing: -0.5px;
+}
+
+
+.brand-icon {
+
+    font-size: 26px;
+}
+
+
+.sidebar-caption {
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+
+    margin-left: 2px;
+}
+
+
+/* ============================================================
+   SIDEBAR DIVIDER
+============================================================ */
+
+section[data-testid="stSidebar"] hr {
+
+    border: none;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.10);
+
+    margin:
+        22px 0;
+}
+
+
+/* ============================================================
+   NAVIGATION
+============================================================ */
+
+.nav-section-title {
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    color: #64748b;
+
+    margin-top: 4px;
+
+    margin-bottom: 12px;
+
+    padding-left: 4px;
+}
+
+
+/* ============================================================
+   RADIO NAVIGATION
+============================================================ */
+
+section[data-testid="stSidebar"]
+[data-testid="stRadio"] {
+
+    width: 100%;
+}
+
+
+section[data-testid="stSidebar"]
+[data-testid="stRadio"]
+label {
+
+    position: relative;
+
+    display: flex !important;
+
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 46px;
+
+    padding: 0 14px;
+
+    margin: 5px 0;
+
+    border-radius: 13px;
+
+    border:
+        1px solid transparent;
+
+    background:
+        transparent;
+
+    color:
+        #94a3b8;
+
+    cursor:
+        pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        border 0.2s ease;
+}
+
+
+section[data-testid="stSidebar"]
+[data-testid="stRadio"]
+label:hover {
+
+    background:
+        rgba(255,255,255,0.06);
+
+    color:
+        #ffffff;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.08);
+
+    transform:
+        translateX(3px);
+}
+
+
+section[data-testid="stSidebar"]
+[data-testid="stRadio"]
+label:has(
+    input:checked
+) {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(99,102,241,0.25),
+            rgba(139,92,246,0.18)
+        );
+
+    border:
+        1px solid
+        rgba(129,140,248,0.35);
+
+    color:
+        #ffffff;
+
+    box-shadow:
+        0 8px 25px
+        rgba(99,102,241,0.12);
+}
+
+
+section[data-testid="stSidebar"]
+[data-testid="stRadio"]
+label:has(
+    input:checked
+)::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    width: 3px;
+
+    height: 24px;
+
+    border-radius:
+        0 4px 4px 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #818cf8,
+            #c084fc
+        );
+}
+
+
+section[data-testid="stSidebar"]
+[data-testid="stRadio"]
+label p {
+
+    margin:
+        0 !important;
+
+    font-size:
+        14px !important;
+
+    font-weight:
+        600 !important;
+}
+
+
+/* ============================================================
+   QUICK OVERVIEW
+============================================================ */
+
+.quick-overview {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.07),
+            rgba(255,255,255,0.03)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,0.10);
+
+    border-radius:
+        16px;
+
+    padding:
+        16px;
+
+    margin-top:
+        12px;
+
+    backdrop-filter:
+        blur(16px);
+
+    -webkit-backdrop-filter:
+        blur(16px);
+}
+
+
+.quick-overview-title {
+
+    font-size:
+        13px;
+
+    font-weight:
+        700;
+
+    color:
+        #cbd5e1;
+
+    margin-bottom:
+        12px;
+}
+
+
+.quick-stat {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    padding:
+        7px 0;
+
+    font-size:
+        12px;
+}
+
+
+.quick-stat-label {
+
+    color:
+        #64748b;
+}
+
+
+.quick-stat-value {
+
+    color:
+        #f8fafc;
+
+    font-weight:
+        700;
+}
+
+
+/* ============================================================
+   GLASS CARD
+============================================================ */
+
+.glass-card {
+
+    background:
+        rgba(255,255,255,0.07);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.12);
+
+    border-radius:
+        20px;
+
+    padding:
+        22px;
+
+    margin-bottom:
+        20px;
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+
+    box-shadow:
+        0 10px 40px
+        rgba(0,0,0,0.25);
+}
+
+
+/* ============================================================
+   KPI CARDS
+============================================================ */
+
+.kpi-card {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.09),
+            rgba(255,255,255,0.04)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,0.13);
+
+    border-radius:
+        20px;
+
+    padding:
+        23px;
+
+    min-height:
+        125px;
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+
+    box-shadow:
+        0 10px 35px
+        rgba(0,0,0,0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.kpi-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 15px 40px
+        rgba(99,102,241,0.18);
+}
+
+
+.kpi-title {
+
+    color:
+        #94a3b8;
+
+    font-size:
+        13px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.8px;
+
+    margin-bottom:
+        10px;
+}
+
+
+.kpi-value {
+
+    font-size:
+        29px;
+
+    font-weight:
+        800;
+
+    color:
+        #ffffff;
+}
+
+
+/* ============================================================
+   KPI VARIATIONS
+============================================================ */
+
+.kpi-card.income {
+
+    border-color:
+        rgba(52,211,153,0.22);
+}
+
+
+.kpi-card.expense {
+
+    border-color:
+        rgba(248,113,113,0.22);
+}
+
+
+.kpi-card.savings {
+
+    border-color:
+        rgba(192,132,252,0.25);
+}
+
+
+/* ============================================================
+   MONTHLY CARDS
+============================================================ */
+
+.mini-finance-card {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    padding:
+        20px 24px;
+}
+
+
+.mini-finance-card span {
+
+    color:
+        #94a3b8;
+
+    font-size:
+        15px;
+}
+
+
+.mini-finance-card strong {
+
+    font-size:
+        22px;
+
+    color:
+        #ffffff;
+}
+
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+
+.stButton > button {
+
+    width:
+        100%;
+
+    min-height:
+        42px;
+
+    border-radius:
+        12px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.15);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(99,102,241,0.90),
+            rgba(139,92,246,0.90)
+        );
+
+    color:
+        #ffffff;
+
+    font-weight:
+        700;
+
+    padding:
+        10px 18px;
+
+    transition:
+        all 0.25s ease;
+}
+
+
+.stButton > button:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 25px
+        rgba(99,102,241,0.35);
+
+    border-color:
+        rgba(255,255,255,0.30);
+}
+
+
+/* ============================================================
+   DOWNLOAD BUTTON
+============================================================ */
+
+.stDownloadButton > button {
+
+    width:
+        100%;
+
+    min-height:
+        44px;
+
+    border-radius:
+        12px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.15);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(16,185,129,0.85),
+            rgba(5,150,105,0.85)
+        );
+
+    color:
+        #ffffff;
+
+    font-weight:
+        700;
+
+    transition:
+        all 0.25s ease;
+}
+
+
+.stDownloadButton > button:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 25px
+        rgba(16,185,129,0.25);
+}
+
+
+/* ============================================================
+   INPUT FIELDS
+============================================================ */
+
+.stTextInput input,
+.stNumberInput input,
+.stDateInput input,
+.stTextArea textarea {
+
+    border-radius:
+        12px !important;
+}
+
+
+.stSelectbox div[data-baseweb="select"] {
+
+    border-radius:
+        12px !important;
+}
+
+
+/* ============================================================
+   ALERTS
+============================================================ */
+
+div[data-testid="stAlert"] {
+
+    border-radius:
+        14px;
+}
+
+
+/* ============================================================
+   PROGRESS
+============================================================ */
+
+.stProgress > div > div {
+
+    border-radius:
+        20px;
+}
+
+
+/* ============================================================
+   DATA TABLE
+============================================================ */
+
+[data-testid="stDataFrame"] {
+
+    border-radius:
+        15px;
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.10);
+}
+
+
+/* ============================================================
+   PLOTLY
+============================================================ */
+
+.stPlotlyChart {
+
+    border:
+        1px solid
+        rgba(255,255,255,0.08);
+
+    border-radius:
+        18px;
+
+    padding:
+        5px;
+
+    background:
+        rgba(255,255,255,0.02);
+}
+
+
+/* ============================================================
+   FINANCIAL INSIGHT CARD
+============================================================ */
+
+.insight-card {
+
+    display:
+        flex;
+
+    align-items:
+        flex-start;
+
+    gap:
+        15px;
+
+    padding:
+        18px;
+
+    margin-bottom:
+        12px;
+
+    border-radius:
+        16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(129,140,248,0.12),
+            rgba(192,132,252,0.08)
+        );
+
+    border:
+        1px solid
+        rgba(129,140,248,0.20);
+}
+
+
+.insight-icon {
+
+    font-size:
+        25px;
+}
+
+
+.insight-title {
+
+    color:
+        #cbd5e1;
+
+    font-size:
+        13px;
+
+    font-weight:
+        700;
+
+    margin-bottom:
+        5px;
+}
+
+
+.insight-text {
+
+    color:
+        #94a3b8;
+
+    font-size:
+        14px;
+
+    line-height:
+        1.6;
+}
+
+
+.insight-text strong {
+
+    color:
+        #ffffff;
+}
+
+
+/* ============================================================
+   SECURITY CARD
+============================================================ */
+
+.security-card {
+
+    padding:
+        18px;
+
+    border-radius:
+        16px;
+
+    background:
+        rgba(255,255,255,0.04);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.08);
+}
+
+
+.security-item {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    padding:
+        8px 0;
+
+    color:
+        #cbd5e1;
+
+    font-size:
+        14px;
+}
+
+
+.security-item span {
+
+    color:
+        #34d399;
+
+    font-weight:
+        800;
+}
+
+
+/* ============================================================
+   PROFESSIONAL FOOTER
+============================================================ */
+
+.footer {
+
+    margin-top:
+        55px;
+
+    padding:
+        30px 25px;
+
+    text-align:
+        center;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.07),
+            rgba(255,255,255,0.03)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,0.10);
+
+    border-radius:
+        20px;
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+
+    box-shadow:
+        0 10px 35px
+        rgba(0,0,0,0.20);
+}
+
+
+.footer-brand {
+
+    font-size:
+        21px;
+
+    font-weight:
+        800;
+
+    color:
+        #ffffff;
+
+    margin-bottom:
+        8px;
+}
+
+
+.footer-description {
+
+    font-size:
+        13px;
+
+    color:
+        #94a3b8;
+
+    margin-bottom:
+        18px;
+}
+
+
+.footer-line {
+
+    width:
+        80px;
+
+    height:
+        2px;
+
+    margin:
+        0 auto 16px auto;
+
+    border-radius:
+        10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #818cf8,
+            #c084fc
+        );
+}
+
+
+.footer-tech {
+
+    font-size:
+        12px;
+
+    color:
+        #64748b;
+
+    letter-spacing:
+        0.3px;
+}
+
+
+/* ============================================================
+   MOBILE EXPERIENCE
+============================================================ */
+
+@media (max-width: 768px) {
+
+    .block-container {
+
+        padding-left:
+            1rem;
+
+        padding-right:
+            1rem;
+
+        padding-top:
+            1rem;
+    }
+
+
+    .main-title {
+
+        font-size:
+            30px;
+    }
+
+
+    .subtitle {
+
+        font-size:
+            14px;
+    }
+
+
+    .kpi-card {
+
+        margin-bottom:
+            12px;
+
+        min-height:
+            105px;
+    }
+
+
+    .kpi-value {
+
+        font-size:
+            22px;
+    }
+
+
+    .mini-finance-card {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        gap:
+            8px;
+    }
+
+
+    .stButton > button {
+
+        min-height:
+            45px;
+    }
+
+
+    .quick-overview {
+
+        margin-bottom:
+            10px;
+    }
+
+
+    .footer {
+
+        padding:
+            22px 15px;
+    }
+
+
+    .footer-brand {
+
+        font-size:
+            18px;
+    }
+}
+
+
+/* ============================================================
+   SMALL SCREEN
+============================================================ */
+
+@media (max-width: 480px) {
+
+    .main-title {
+
+        font-size:
+            25px;
+    }
+
+
+    .kpi-value {
+
+        font-size:
+            20px;
+    }
+
+
+    .footer-tech {
+
+        font-size:
+            11px;
+    }
+}
